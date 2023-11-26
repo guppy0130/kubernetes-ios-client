@@ -1,0 +1,11 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: "apple/swift-format"
+        name: "apple/swift-format"
+        language: "system"
+        entry: "swift-format --in-place"
+        files: "kubernetes/.*"
+        types:
+          - "swift"
