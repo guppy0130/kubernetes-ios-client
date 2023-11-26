@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F30E347A2B129AB90098CE5B /* kubernetesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30E34792B129AB90098CE5B /* kubernetesApp.swift */; };
+		F30E347C2B129AB90098CE5B /* Clusters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30E347B2B129AB90098CE5B /* Clusters.swift */; };
+		F30E34802B129ABA0098CE5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30E347F2B129ABA0098CE5B /* Assets.xcassets */; };
+		F30E34832B129ABA0098CE5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30E34822B129ABA0098CE5B /* Preview Assets.xcassets */; };
+		F30E348B2B12CEC60098CE5B /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = F30E348A2B12CEC60098CE5B /* Yams */; };
+		F30E348D2B12CF920098CE5B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30E348C2B12CF920098CE5B /* Context.swift */; };
+		F30E34902B12D1900098CE5B /* SwiftkubeClient in Frameworks */ = {isa = PBXBuildFile; productRef = F30E348F2B12D1900098CE5B /* SwiftkubeClient */; };
+		F329C4B82B828E4400B7E5B1 /* ReplicaSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329C4B72B828E4400B7E5B1 /* ReplicaSets.swift */; };
+		F329C4BA2B82B7B600B7E5B1 /* Pods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329C4B92B82B7B600B7E5B1 /* Pods.swift */; };
+		F355CEE12B7830C300520374 /* InfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355CEE02B7830C300520374 /* InfoPanel.swift */; };
+		F39569A22B81BED200561B6E /* Deployments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39569A12B81BED200561B6E /* Deployments.swift */; };
+		F3D1472F2B72B626005E3E15 /* Namespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1472E2B72B626005E3E15 /* Namespaces.swift */; };
+		F3D147312B72D5AA005E3E15 /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D147302B72D5AA005E3E15 /* Nodes.swift */; };
+		F3F630D52B816EED00F26699 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630D42B816EED00F26699 /* OrderedCollections */; };
+		F3F630D72B816FC500F26699 /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630D62B816FC500F26699 /* BitCollections */; };
+		F3F630D92B816FC500F26699 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630D82B816FC500F26699 /* Collections */; };
+		F3F630DB2B816FC500F26699 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630DA2B816FC500F26699 /* DequeModule */; };
+		F3F630DD2B816FC500F26699 /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630DC2B816FC500F26699 /* HashTreeCollections */; };
+		F3F630DF2B816FC500F26699 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630DE2B816FC500F26699 /* HeapModule */; };
+		F3F630E12B816FC500F26699 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630E02B816FC500F26699 /* OrderedCollections */; };
+		F3F630E32B816FC500F26699 /* _RopeModule in Frameworks */ = {isa = PBXBuildFile; productRef = F3F630E22B816FC500F26699 /* _RopeModule */; };
+		F3F630E52B81715F00F26699 /* PercentageCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F630E42B81715F00F26699 /* PercentageCharts.swift */; };
+		F3F7823B2BE8478600BEAA17 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7823A2BE8478600BEAA17 /* Containers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F30E34762B129AB90098CE5B /* kubernetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kubernetes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30E34792B129AB90098CE5B /* kubernetesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kubernetesApp.swift; sourceTree = "<group>"; };
+		F30E347B2B129AB90098CE5B /* Clusters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clusters.swift; sourceTree = "<group>"; };
+		F30E347F2B129ABA0098CE5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30E34822B129ABA0098CE5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F30E348C2B12CF920098CE5B /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		F329C4B72B828E4400B7E5B1 /* ReplicaSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaSets.swift; sourceTree = "<group>"; };
+		F329C4B92B82B7B600B7E5B1 /* Pods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pods.swift; sourceTree = "<group>"; };
+		F355CEE02B7830C300520374 /* InfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanel.swift; sourceTree = "<group>"; };
+		F39569A12B81BED200561B6E /* Deployments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deployments.swift; sourceTree = "<group>"; };
+		F3D1472E2B72B626005E3E15 /* Namespaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespaces.swift; sourceTree = "<group>"; };
+		F3D147302B72D5AA005E3E15 /* Nodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
+		F3F630E42B81715F00F26699 /* PercentageCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageCharts.swift; sourceTree = "<group>"; };
+		F3F7823A2BE8478600BEAA17 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F30E34732B129AB90098CE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F630D72B816FC500F26699 /* BitCollections in Frameworks */,
+				F30E34902B12D1900098CE5B /* SwiftkubeClient in Frameworks */,
+				F3F630D92B816FC500F26699 /* Collections in Frameworks */,
+				F3F630DD2B816FC500F26699 /* HashTreeCollections in Frameworks */,
+				F30E348B2B12CEC60098CE5B /* Yams in Frameworks */,
+				F3F630E12B816FC500F26699 /* OrderedCollections in Frameworks */,
+				F3F630D52B816EED00F26699 /* OrderedCollections in Frameworks */,
+				F3F630DF2B816FC500F26699 /* HeapModule in Frameworks */,
+				F3F630E32B816FC500F26699 /* _RopeModule in Frameworks */,
+				F3F630DB2B816FC500F26699 /* DequeModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F30E346D2B129AB90098CE5B = {
+			isa = PBXGroup;
+			children = (
+				F30E34782B129AB90098CE5B /* kubernetes */,
+				F30E34772B129AB90098CE5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F30E34772B129AB90098CE5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F30E34762B129AB90098CE5B /* kubernetes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F30E34782B129AB90098CE5B /* kubernetes */ = {
+			isa = PBXGroup;
+			children = (
+				F30E34792B129AB90098CE5B /* kubernetesApp.swift */,
+				F30E347B2B129AB90098CE5B /* Clusters.swift */,
+				F30E347F2B129ABA0098CE5B /* Assets.xcassets */,
+				F30E34812B129ABA0098CE5B /* Preview Content */,
+				F30E348C2B12CF920098CE5B /* Context.swift */,
+				F3D1472E2B72B626005E3E15 /* Namespaces.swift */,
+				F39569A12B81BED200561B6E /* Deployments.swift */,
+				F3D147302B72D5AA005E3E15 /* Nodes.swift */,
+				F355CEE02B7830C300520374 /* InfoPanel.swift */,
+				F3F630E42B81715F00F26699 /* PercentageCharts.swift */,
+				F329C4B72B828E4400B7E5B1 /* ReplicaSets.swift */,
+				F329C4B92B82B7B600B7E5B1 /* Pods.swift */,
+				F3F7823A2BE8478600BEAA17 /* Containers.swift */,
+			);
+			path = kubernetes;
+			sourceTree = "<group>";
+		};
+		F30E34812B129ABA0098CE5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F30E34822B129ABA0098CE5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F30E34752B129AB90098CE5B /* kubernetes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30E34862B129ABA0098CE5B /* Build configuration list for PBXNativeTarget "kubernetes" */;
+			buildPhases = (
+				F30E34722B129AB90098CE5B /* Sources */,
+				F30E34732B129AB90098CE5B /* Frameworks */,
+				F30E34742B129AB90098CE5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kubernetes;
+			packageProductDependencies = (
+				F30E348A2B12CEC60098CE5B /* Yams */,
+				F30E348F2B12D1900098CE5B /* SwiftkubeClient */,
+				F3F630D42B816EED00F26699 /* OrderedCollections */,
+				F3F630D62B816FC500F26699 /* BitCollections */,
+				F3F630D82B816FC500F26699 /* Collections */,
+				F3F630DA2B816FC500F26699 /* DequeModule */,
+				F3F630DC2B816FC500F26699 /* HashTreeCollections */,
+				F3F630DE2B816FC500F26699 /* HeapModule */,
+				F3F630E02B816FC500F26699 /* OrderedCollections */,
+				F3F630E22B816FC500F26699 /* _RopeModule */,
+			);
+			productName = kubernetes;
+			productReference = F30E34762B129AB90098CE5B /* kubernetes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F30E346E2B129AB90098CE5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F30E34752B129AB90098CE5B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F30E34712B129AB90098CE5B /* Build configuration list for PBXProject "kubernetes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F30E346D2B129AB90098CE5B;
+			packageReferences = (
+				F30E34892B12CEC60098CE5B /* XCRemoteSwiftPackageReference "Yams" */,
+				F30E348E2B12D1900098CE5B /* XCRemoteSwiftPackageReference "client" */,
+				F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = F30E34772B129AB90098CE5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F30E34752B129AB90098CE5B /* kubernetes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F30E34742B129AB90098CE5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30E34832B129ABA0098CE5B /* Preview Assets.xcassets in Resources */,
+				F30E34802B129ABA0098CE5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F30E34722B129AB90098CE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F329C4B82B828E4400B7E5B1 /* ReplicaSets.swift in Sources */,
+				F3F7823B2BE8478600BEAA17 /* Containers.swift in Sources */,
+				F39569A22B81BED200561B6E /* Deployments.swift in Sources */,
+				F3D147312B72D5AA005E3E15 /* Nodes.swift in Sources */,
+				F30E347C2B129AB90098CE5B /* Clusters.swift in Sources */,
+				F355CEE12B7830C300520374 /* InfoPanel.swift in Sources */,
+				F329C4BA2B82B7B600B7E5B1 /* Pods.swift in Sources */,
+				F30E347A2B129AB90098CE5B /* kubernetesApp.swift in Sources */,
+				F30E348D2B12CF920098CE5B /* Context.swift in Sources */,
+				F3D1472F2B72B626005E3E15 /* Namespaces.swift in Sources */,
+				F3F630E52B81715F00F26699 /* PercentageCharts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F30E34842B129ABA0098CE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F30E34852B129ABA0098CE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F30E34872B129ABA0098CE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kubernetes/Preview Content\"";
+				DEVELOPMENT_TEAM = AKH54X5PTG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Connecting to clusters on the local network";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.inthemainfra.kubernetes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F30E34882B129ABA0098CE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kubernetes/Preview Content\"";
+				DEVELOPMENT_TEAM = AKH54X5PTG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Connecting to clusters on the local network";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.inthemainfra.kubernetes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F30E34712B129AB90098CE5B /* Build configuration list for PBXProject "kubernetes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30E34842B129ABA0098CE5B /* Debug */,
+				F30E34852B129ABA0098CE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30E34862B129ABA0098CE5B /* Build configuration list for PBXNativeTarget "kubernetes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30E34872B129ABA0098CE5B /* Debug */,
+				F30E34882B129ABA0098CE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F30E34892B12CEC60098CE5B /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.6;
+			};
+		};
+		F30E348E2B12D1900098CE5B /* XCRemoteSwiftPackageReference "client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftkube/client.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.18.0;
+			};
+		};
+		F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F30E348A2B12CEC60098CE5B /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F30E34892B12CEC60098CE5B /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+		F30E348F2B12D1900098CE5B /* SwiftkubeClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F30E348E2B12D1900098CE5B /* XCRemoteSwiftPackageReference "client" */;
+			productName = SwiftkubeClient;
+		};
+		F3F630D42B816EED00F26699 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		F3F630D62B816FC500F26699 /* BitCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = BitCollections;
+		};
+		F3F630D82B816FC500F26699 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		F3F630DA2B816FC500F26699 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		F3F630DC2B816FC500F26699 /* HashTreeCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HashTreeCollections;
+		};
+		F3F630DE2B816FC500F26699 /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
+		F3F630E02B816FC500F26699 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		F3F630E22B816FC500F26699 /* _RopeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F630D32B816EED00F26699 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = _RopeModule;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F30E346E2B129AB90098CE5B /* Project object */;
+}
